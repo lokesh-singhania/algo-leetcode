@@ -1,8 +1,10 @@
-package algo.linked.list;
+package algo.linked.list.questions.sip;
+
+import algo.linked.list.pojo.ListNode;
 
 public class SplitInParts {
 
-	ListNode[] splitListIntoParts(ListNode head, int k) {
+	public ListNode[] splitListIntoParts(ListNode head, int k) {
 		int n = size(head);
 		ListNode node = head;
 		ListNode[] parts = new ListNode[k];

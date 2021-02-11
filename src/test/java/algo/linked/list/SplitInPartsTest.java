@@ -7,6 +7,9 @@ import java.util.Arrays;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import algo.linked.list.pojo.ListNode;
+import algo.linked.list.questions.sip.SplitInParts;
+
 public class SplitInPartsTest {
 
 	SplitInParts service = new SplitInParts();
@@ -18,37 +21,37 @@ public class SplitInPartsTest {
 
 	@Test
 	public void testOnePart() {
-		ListNode list = Util.createList(1, 2, 3, 4);
+		ListNode list = ListUtil.createList(1, 2, 3, 4);
 		assertTrue(Arrays.equals(service.splitListIntoParts(list, 1), new ListNode[] { list }));
 	}
 
 	@Test
 	public void testForEqualParts() {
-		ListNode list = Util.createList(1, 2, 3, 4);
+		ListNode list = ListUtil.createList(1, 2, 3, 4);
 		assertTrue(Arrays.equals(service.splitListIntoParts(list, 2),
-				new ListNode[] { Util.createList(1, 2), Util.createList(3, 4) }));
+				new ListNode[] { ListUtil.createList(1, 2), ListUtil.createList(3, 4) }));
 	}
 
 	@Test
 	public void testForUnequalParts() {
-		ListNode list = Util.createList(1, 2, 3, 4);
+		ListNode list = ListUtil.createList(1, 2, 3, 4);
 		assertTrue(Arrays.equals(service.splitListIntoParts(list, 3),
-				new ListNode[] { Util.createList(1, 2), Util.createList(3), Util.createList(4) }));
+				new ListNode[] { ListUtil.createList(1, 2), ListUtil.createList(3), ListUtil.createList(4) }));
 	}
 	
 	@Test
 	public void testForPartsEqualToSize() {
-		ListNode list = Util.createList(1, 2, 3, 4);
+		ListNode list = ListUtil.createList(1, 2, 3, 4);
 		assertTrue(Arrays.equals(service.splitListIntoParts(list, 4),
-				new ListNode[] { Util.createList(1), Util.createList(2), Util.createList(3), Util.createList(4) }));
+				new ListNode[] { ListUtil.createList(1), ListUtil.createList(2), ListUtil.createList(3), ListUtil.createList(4) }));
 	}
 	
 	
 	@Test
 	public void testForPartsGreaterThanSize() {
-		ListNode list = Util.createList(1, 2, 3, 4);
+		ListNode list = ListUtil.createList(1, 2, 3, 4);
 		assertTrue(Arrays.equals(service.splitListIntoParts(list, 5),
-				new ListNode[] { Util.createList(1), Util.createList(2), Util.createList(3), Util.createList(4), null }));
+				new ListNode[] { ListUtil.createList(1), ListUtil.createList(2), ListUtil.createList(3), ListUtil.createList(4), null }));
 	}
 
 }

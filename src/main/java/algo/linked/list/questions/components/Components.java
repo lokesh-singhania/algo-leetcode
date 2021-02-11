@@ -1,8 +1,10 @@
-package algo.linked.list;
+package algo.linked.list.questions.components;
 
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import algo.linked.list.pojo.ListNode;
 
 public class Components {
 	public int numComponents(ListNode head, int[] G) {

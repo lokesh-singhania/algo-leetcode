@@ -1,9 +1,11 @@
 package algo.linked.list;
 
-import static algo.linked.list.Util.createList;
+import static algo.linked.list.ListUtil.createList;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
+
+import algo.linked.list.questions.components.Components;
 
 public class ComponentsTest {
 
