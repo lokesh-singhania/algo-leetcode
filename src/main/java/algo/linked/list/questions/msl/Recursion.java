@@ -1,4 +1,4 @@
- package algo.linked.list.msl;
+ package algo.linked.list.questions.msl;
 
 import algo.linked.list.pojo.ListNode;
 

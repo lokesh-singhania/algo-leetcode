@@ -7,6 +7,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
+import algo.linked.list.questions.msl.Merge2SortedLists;
 
 public abstract class Merge2SortedListsTest {
 

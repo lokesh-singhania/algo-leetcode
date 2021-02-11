@@ -1,5 +1,7 @@
 package algo.linked.list.msl;
 
+import algo.linked.list.questions.msl.CreatingNew;
+
 public class CreatingNewTest extends Merge2SortedListsTest{
 
 	public CreatingNewTest() {
