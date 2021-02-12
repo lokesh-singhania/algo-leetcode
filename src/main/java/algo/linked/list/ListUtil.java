@@ -5,6 +5,7 @@ import algo.linked.list.pojo.ListNode;
 public class ListUtil {
 
 	public static ListNode createList(int... values) {
+		if(values==null) return null;
 		ListNode head = new ListNode(values[0]);
 		ListNode prev = head;
 		for (int i = 1; i < values.length; i++) {
