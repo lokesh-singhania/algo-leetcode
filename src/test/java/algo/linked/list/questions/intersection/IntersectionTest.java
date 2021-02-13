@@ -7,11 +7,11 @@ import static org.testng.Assert.assertNull;
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.intersection.sol.Optimal;
+import algo.linked.list.questions.intersection.sol.TwoPointers;
 
 public class IntersectionTest {
 
-	Intersection sol = new Optimal();
+	Intersection sol = new TwoPointers();
 
 	@Test
 	public void bothListsNull() {
