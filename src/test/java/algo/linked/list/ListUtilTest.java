@@ -45,6 +45,6 @@ public class ListUtilTest {
 	}
 
 	private void test(ListNode head1, ListNode head2, boolean expectedOutput) {
-		assertEquals(ListUtil.equalList(head1, head2), expectedOutput);
+		assertEquals(ListUtil.equalValueList(head1, head2), expectedOutput);
 	}
 }

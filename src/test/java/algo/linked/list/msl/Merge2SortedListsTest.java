@@ -1,7 +1,7 @@
 package algo.linked.list.msl;
 
 import static algo.linked.list.ListUtil.createList;
-import static algo.linked.list.ListUtil.equalList;
+import static algo.linked.list.ListUtil.equalValueList;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
@@ -27,7 +27,7 @@ public abstract class Merge2SortedListsTest {
 
 	private void test(ListNode l1, ListNode l2, ListNode expected) {
 		ListNode output = sol.mergeTwoLists(l1, l2);
-		assertTrue(equalList(output, expected));
+		assertTrue(equalValueList(output, expected));
 	}
 	
 	@Test
