@@ -3,7 +3,7 @@ package algo.linked.list.questions.intersection.sol;
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.intersection.Intersection;
 
-public class Interleaving implements Intersection {
+public class TwoPointers implements Intersection {
 
 	@Override
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
