@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 
 import algo.linked.list.ListUtil;
 import algo.linked.list.pojo.ListNode;
+import algo.linked.list.questions.rd.Elegant;
+import algo.linked.list.questions.rd.FirstAttempt;
+import algo.linked.list.questions.rd.RemoveDuplicates;
 
 public class RemoveDuplicatesTest {
 
@@ -45,7 +48,7 @@ public class RemoveDuplicatesTest {
 
 	private void test(ListNode input, ListNode expected) {
 		ListNode output = sol.removeDuplicates(input);
-		assertTrue(ListUtil.equalList(expected , output));
+		assertTrue(ListUtil.equalValueList(expected , output));
 	}
 	
 }

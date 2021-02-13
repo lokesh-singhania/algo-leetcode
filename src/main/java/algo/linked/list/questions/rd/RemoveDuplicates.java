@@ -1,4 +1,4 @@
-package algo.linked.list.questions.remove.duplicates;
+package algo.linked.list.questions.rd;
 
 import algo.linked.list.pojo.ListNode;
 
