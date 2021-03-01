@@ -4,10 +4,10 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import algo.linked.list.ListUtil;
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.llc.LinkedListCycle;
-import algo.linked.list.questions.llc.sol.TwoPointers;
+import algo.linked.list.questions.easy.llc.LinkedListCycle;
+import algo.linked.list.questions.easy.llc.sol.TwoPointers;
+import algo.linked.list.util.ListUtil;
 
 public class LinkedListCycleTest {
 

@@ -1,16 +1,18 @@
 package algo.linked.list.questions.palindrome;
 
-import static algo.linked.list.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.createList;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import algo.linked.list.ListUtil;
 import algo.linked.list.pojo.ListNode;
+import algo.linked.list.questions.easy.palindrome.Palindrome;
+import algo.linked.list.questions.easy.palindrome.RecursiveElegant;
+import algo.linked.list.util.ListUtil;
 
 public class PalindromeTest {
 
-	Palindrome sol=new Better();
+	Palindrome sol=new RecursiveElegant();
 
 	@Test
 	public void nullList() {

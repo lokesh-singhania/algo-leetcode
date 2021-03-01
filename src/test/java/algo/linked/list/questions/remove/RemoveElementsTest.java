@@ -1,14 +1,15 @@
 package algo.linked.list.questions.remove;
 
-import static algo.linked.list.ListUtil.createList;
-import static algo.linked.list.ListUtil.equalValueList;
+import static algo.linked.list.util.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.equalValueList;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.remove.sol.Iterative;
-import algo.linked.list.questions.remove.sol.Recursive;
+import algo.linked.list.questions.easy.remove.RemoveElements;
+import algo.linked.list.questions.easy.remove.sol.Iterative;
+import algo.linked.list.questions.easy.remove.sol.Recursive;
 
 public class RemoveElementsTest {
 

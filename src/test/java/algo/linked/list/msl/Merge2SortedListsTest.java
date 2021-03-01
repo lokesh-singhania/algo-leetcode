@@ -1,13 +1,13 @@
 package algo.linked.list.msl;
 
-import static algo.linked.list.ListUtil.createList;
-import static algo.linked.list.ListUtil.equalValueList;
+import static algo.linked.list.util.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.equalValueList;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.msl.Merge2SortedLists;
+import algo.linked.list.questions.easy.msl.Merge2SortedLists;
 
 public abstract class Merge2SortedListsTest {
 

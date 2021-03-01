@@ -1,17 +1,18 @@
 package algo.linked.list.questions.intersection;
 
-import static algo.linked.list.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.createList;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
 
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.intersection.sol.TwoPointers;
+import algo.linked.list.questions.easy.intersection.IntersectionNode;
+import algo.linked.list.questions.easy.intersection.TwoPointers;
 
 public class IntersectionTest {
 
-	Intersection sol = new TwoPointers();
+	IntersectionNode sol = new TwoPointers();
 
 	@Test
 	public void bothListsNull() {

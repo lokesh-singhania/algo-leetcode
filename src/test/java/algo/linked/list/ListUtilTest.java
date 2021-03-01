@@ -1,15 +1,14 @@
 package algo.linked.list;
 
-import static algo.linked.list.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.createList;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
+import algo.linked.list.util.ListUtil;
 
 public class ListUtilTest {
-
-	
 
 	public class EqualList {
 		@Test

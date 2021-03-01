@@ -8,41 +8,42 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.sip.SplitInParts;
+import algo.linked.list.questions.medium.sip.SplitImpl;
+import algo.linked.list.util.ListUtil;
 
 public class SplitInPartsTest {
 
-	SplitInParts service = new SplitInParts();
+	SplitImpl service = new SplitImpl();
 
 	@Test
 	public void emptyTest() {
-		Assert.assertEquals(service.splitListIntoParts(null, 1), new ListNode[] { null });
+		Assert.assertEquals(service.split(null, 1), new ListNode[] { null });
 	}
 
 	@Test
 	public void testOnePart() {
 		ListNode list = ListUtil.createList(1, 2, 3, 4);
-		assertTrue(Arrays.equals(service.splitListIntoParts(list, 1), new ListNode[] { list }));
+		assertTrue(Arrays.equals(service.split(list, 1), new ListNode[] { list }));
 	}
 
 	@Test
 	public void testForEqualParts() {
 		ListNode list = ListUtil.createList(1, 2, 3, 4);
-		assertTrue(Arrays.equals(service.splitListIntoParts(list, 2),
+		assertTrue(Arrays.equals(service.split(list, 2),
 				new ListNode[] { ListUtil.createList(1, 2), ListUtil.createList(3, 4) }));
 	}
 
 	@Test
 	public void testForUnequalParts() {
 		ListNode list = ListUtil.createList(1, 2, 3, 4);
-		assertTrue(Arrays.equals(service.splitListIntoParts(list, 3),
+		assertTrue(Arrays.equals(service.split(list, 3),
 				new ListNode[] { ListUtil.createList(1, 2), ListUtil.createList(3), ListUtil.createList(4) }));
 	}
 	
 	@Test
 	public void testForPartsEqualToSize() {
 		ListNode list = ListUtil.createList(1, 2, 3, 4);
-		assertTrue(Arrays.equals(service.splitListIntoParts(list, 4),
+		assertTrue(Arrays.equals(service.split(list, 4),
 				new ListNode[] { ListUtil.createList(1), ListUtil.createList(2), ListUtil.createList(3), ListUtil.createList(4) }));
 	}
 	
@@ -50,7 +51,7 @@ public class SplitInPartsTest {
 	@Test
 	public void testForPartsGreaterThanSize() {
 		ListNode list = ListUtil.createList(1, 2, 3, 4);
-		assertTrue(Arrays.equals(service.splitListIntoParts(list, 5),
+		assertTrue(Arrays.equals(service.split(list, 5),
 				new ListNode[] { ListUtil.createList(1), ListUtil.createList(2), ListUtil.createList(3), ListUtil.createList(4), null }));
 	}
 

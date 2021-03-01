@@ -4,10 +4,11 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import algo.linked.list.ListUtil;
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.binary.sol.BitShift;
-import algo.linked.list.questions.binary.sol.Maths;
+import algo.linked.list.questions.easy.binary.ConvertBinaryNumberToInteger;
+import algo.linked.list.questions.easy.binary.sol.BitShift;
+import algo.linked.list.questions.easy.binary.sol.Maths;
+import algo.linked.list.util.ListUtil;
 
 public class ConvertBinaryNumberToIntegerTest {
 

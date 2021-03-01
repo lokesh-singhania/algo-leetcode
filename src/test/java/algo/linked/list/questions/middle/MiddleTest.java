@@ -1,13 +1,14 @@
 package algo.linked.list.questions.middle;
 
-import static algo.linked.list.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.createList;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
 
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.middle.sol.TwoPointers;
+import algo.linked.list.questions.easy.middle.Middle;
+import algo.linked.list.questions.easy.middle.sol.TwoPointers;
 
 public class MiddleTest {
 	

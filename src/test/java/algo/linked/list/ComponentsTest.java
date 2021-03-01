@@ -1,15 +1,15 @@
 package algo.linked.list;
 
-import static algo.linked.list.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.createList;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import algo.linked.list.questions.components.Components;
+import algo.linked.list.questions.medium.components.ComponentsImpl;
 
 public class ComponentsTest {
 
-	Components service = new Components();
+	ComponentsImpl service = new ComponentsImpl();
 	
 	@Test
 	public void testNoComponents() {

@@ -1,15 +1,15 @@
 package algo.linked.list.questions.remove.duplicates;
 
-import static algo.linked.list.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.createList;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import algo.linked.list.ListUtil;
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.rd.Elegant;
-import algo.linked.list.questions.rd.FirstAttempt;
-import algo.linked.list.questions.rd.RemoveDuplicates;
+import algo.linked.list.questions.easy.rd.Elegant;
+import algo.linked.list.questions.easy.rd.FirstAttempt;
+import algo.linked.list.questions.easy.rd.RemoveDuplicates;
+import algo.linked.list.util.ListUtil;
 
 public class RemoveDuplicatesTest {
 

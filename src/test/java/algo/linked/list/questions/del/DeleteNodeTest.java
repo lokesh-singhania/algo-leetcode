@@ -1,14 +1,15 @@
 package algo.linked.list.questions.del;
 
-import static algo.linked.list.ListUtil.createList;
-import static algo.linked.list.ListUtil.equalValueList;
+import static algo.linked.list.util.ListUtil.createList;
+import static algo.linked.list.util.ListUtil.equalValueList;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import algo.linked.list.ListUtil;
 import algo.linked.list.pojo.ListNode;
-import algo.linked.list.questions.del.sol.DeleteNodeImpl;
+import algo.linked.list.questions.easy.del.DeleteNode;
+import algo.linked.list.questions.easy.del.sol.DeleteNodeImpl;
+import algo.linked.list.util.ListUtil;
 
 public class DeleteNodeTest {
 	DeleteNode sol=new DeleteNodeImpl();
