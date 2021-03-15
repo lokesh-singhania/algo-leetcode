@@ -2,8 +2,11 @@ package algo.linked.list.util;
 
 import algo.linked.list.pojo.ListNode;
 
-public class ListUtil {
+public final class ListUtil {
 
+	private ListUtil() {
+	}
+	
 	public static ListNode createList(int... values) {
 		if (values == null)
 			return null;
@@ -28,18 +31,15 @@ public class ListUtil {
 	}
 
 	public static boolean equalValueList(ListNode head1, ListNode head2) {
-		boolean isEqual;
 		while (head1 != null && head2 != null) {
 			if (head1.val != head2.val) {
-				isEqual = false;
 				break;
 			} else {
 				head1 = head1.next;
 				head2 = head2.next;
 			}
 		}
-		isEqual = head1 == null && head2 == null;
-		return isEqual;
+		return head1 == null && head2 == null;
 	}
 
 }
