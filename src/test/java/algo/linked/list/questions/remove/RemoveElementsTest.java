@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.easy.remove.RemoveElements;
-import algo.linked.list.questions.easy.remove.sol.Iterative;
 import algo.linked.list.questions.easy.remove.sol.Recursive;
 
 public class RemoveElementsTest {

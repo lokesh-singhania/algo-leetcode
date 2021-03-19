@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.easy.llc.LinkedListCycle;
-import algo.linked.list.questions.easy.llc.sol.TwoPointers;
 import algo.linked.list.util.ListUtil;
 
 public class LinkedListCycleTest {

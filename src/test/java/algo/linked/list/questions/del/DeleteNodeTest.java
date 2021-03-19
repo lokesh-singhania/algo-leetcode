@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.easy.del.DeleteNode;
 import algo.linked.list.questions.easy.del.sol.DeleteNodeImpl;
-import algo.linked.list.util.ListUtil;
 
 public class DeleteNodeTest {
 	DeleteNode sol=new DeleteNodeImpl();

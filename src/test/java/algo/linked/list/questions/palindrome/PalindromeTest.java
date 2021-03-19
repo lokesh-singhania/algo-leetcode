@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.easy.palindrome.Palindrome;
 import algo.linked.list.questions.easy.palindrome.RecursiveElegant;
-import algo.linked.list.util.ListUtil;
 
 public class PalindromeTest {
 

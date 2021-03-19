@@ -6,9 +6,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
+import algo.stack.easy.impl.bsc.ConstantSpaceFailFast;
 import algo.stack.easy.impl.bsc.LinearSpace;
 import algo.util.TestUtil;
-import algo.stack.easy.impl.bsc.ConstantSpaceFailFast;
 
 public class BackspaceStringCompareTest {
 

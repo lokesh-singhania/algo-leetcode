@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.medium.sp.SwapPairs;
-import algo.linked.list.questions.medium.sp.sol.Iterative;
 import algo.linked.list.questions.medium.sp.sol.Recursive;
 import algo.linked.list.util.ListUtil;
 

@@ -1,4 +1,4 @@
-package algo.stack.using.queues;
+package algo.stack.easy;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
@@ -6,13 +6,25 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.function.Supplier;
 
+import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-import algo.stack.easy.StackUsingQueues;
+import algo.stack.easy.impl.suq.LinkedListImpl;
+import algo.stack.easy.impl.suq.ListImpl;
+import algo.stack.easy.impl.suq.SingleQueue;
 
 public class StackUsingQueuesTest {
 	Supplier<StackUsingQueues<Integer>> newStackSupplier;
 
+	@Factory
+	public Object[] tests() {
+		return new Object[] {
+			new StackUsingQueuesTest(LinkedListImpl<Integer>::new),
+			new StackUsingQueuesTest(ListImpl<Integer>::new),
+			new StackUsingQueuesTest(SingleQueue<Integer>::new)
+		};
+	}
+	
 	public StackUsingQueuesTest(Supplier<StackUsingQueues<Integer>> newStackSupplier) {
 		this.newStackSupplier=newStackSupplier;
 	}

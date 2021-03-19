@@ -4,9 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import algo.string.vp2.ValidPalindrome2;
 import algo.string.vp2.BruteForce;
-import algo.string.vp2.Optimal;
+import algo.string.vp2.ValidPalindrome2;
 
 public class ValidPalindrome2Test {
 

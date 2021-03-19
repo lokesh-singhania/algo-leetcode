@@ -9,9 +9,7 @@ import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.medium.rnfe.RemoveNthFromEnd;
-import algo.linked.list.questions.medium.rnfe.sol.Recursive;
 import algo.linked.list.questions.medium.rnfe.sol.RecursiveElegant;
-import algo.linked.list.questions.medium.rnfe.sol.TwoPass;
 
 public class RemoveNthFromEndTest {
 	RemoveNthFromEnd sol = new RecursiveElegant();
