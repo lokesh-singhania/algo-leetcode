@@ -1,4 +1,4 @@
-package algo.stack.qus;
+package algo.stack.easy.impl.qus;
 
 public class Lazy extends TwoStacks{
 	

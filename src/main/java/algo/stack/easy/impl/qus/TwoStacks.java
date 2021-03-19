@@ -1,6 +1,8 @@
-package algo.stack.qus;
+package algo.stack.easy.impl.qus;
 
 import java.util.LinkedList;
+
+import algo.stack.easy.QueueUsingStacks;
 
 public class TwoStacks implements QueueUsingStacks {
 

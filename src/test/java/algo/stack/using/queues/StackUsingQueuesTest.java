@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 
 import org.testng.annotations.Test;
 
-import algo.stack.suq.StackUsingQueues;
+import algo.stack.easy.StackUsingQueues;
 
 public class StackUsingQueuesTest {
 	Supplier<StackUsingQueues<Integer>> newStackSupplier;

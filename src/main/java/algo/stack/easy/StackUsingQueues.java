@@ -1,4 +1,4 @@
-package algo.stack.suq;
+package algo.stack.easy;
 
 public interface StackUsingQueues<T> {
 

@@ -5,6 +5,10 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
+import algo.stack.easy.QueueUsingStacks;
+import algo.stack.easy.impl.qus.Lazy;
+import algo.stack.easy.impl.qus.TwoStacks;
+
 public class QueueUsingStacksTest {
 	Class<? extends QueueUsingStacks> clazz; 
 	

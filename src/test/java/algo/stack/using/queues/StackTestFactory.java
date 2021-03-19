@@ -2,9 +2,9 @@ package algo.stack.using.queues;
 
 import org.testng.annotations.Factory;
 
-import algo.stack.suq.LinkedListImpl;
-import algo.stack.suq.ListImpl;
-import algo.stack.suq.SingleQueue;
+import algo.stack.easy.impl.suq.LinkedListImpl;
+import algo.stack.easy.impl.suq.ListImpl;
+import algo.stack.easy.impl.suq.SingleQueue;
 
 public class StackTestFactory {
 

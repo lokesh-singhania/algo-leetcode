@@ -1,4 +1,4 @@
-package algo.stack.qus;
+package algo.stack.easy;
 
 public interface QueueUsingStacks {
 

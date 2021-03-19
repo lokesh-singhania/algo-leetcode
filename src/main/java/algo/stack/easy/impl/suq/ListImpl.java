@@ -1,8 +1,10 @@
-package algo.stack.suq;
+package algo.stack.easy.impl.suq;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import algo.stack.easy.StackUsingQueues;
 
 public class ListImpl<T> implements StackUsingQueues<T>{
 

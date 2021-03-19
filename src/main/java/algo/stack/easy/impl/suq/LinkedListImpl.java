@@ -1,6 +1,8 @@
-package algo.stack.suq;
+package algo.stack.easy.impl.suq;
 
 import java.util.LinkedList;
+
+import algo.stack.easy.StackUsingQueues;
 
 public class LinkedListImpl<T> implements StackUsingQueues<T> {
 
