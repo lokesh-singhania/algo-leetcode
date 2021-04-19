@@ -10,8 +10,9 @@ import algo.random.esct.Recursive;
 import algo.random.esct.Straight;
 
 public class ExcelSheetColumnTitleTest {
-	private ExcelSheetColumnTitle service;
 	
+	private ExcelSheetColumnTitle service;
+
 	public ExcelSheetColumnTitleTest(ExcelSheetColumnTitle service) {
 		this.service = service;
 	}
@@ -19,18 +20,18 @@ public class ExcelSheetColumnTitleTest {
 	@Factory
 	private static Object[] factory() {
 		return new Object[] {
-			new ExcelSheetColumnTitleTest(new Straight()),
-			new ExcelSheetColumnTitleTest(new Recursive())
+				new ExcelSheetColumnTitleTest(new Straight()),
+				new ExcelSheetColumnTitleTest(new Recursive())
 		};
 	}
-	
+
 	@DataProvider
-	private Object[][] data(){
+	private Object[][] data() {
 		return new Object[][] {
-			{1,"A"},
-			{26,"Z"},
-			{27,"AA"},
-			{702,"ZZ"}
+				{ 1, "A" },
+				{ 26, "Z" },
+				{ 27, "AA" },
+				{ 702, "ZZ" }
 		};
 	}
 

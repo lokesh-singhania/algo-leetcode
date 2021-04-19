@@ -4,13 +4,13 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 import algo.stack.medium.ReversePolishNotation;
-import algo.util.GeneralUtil;
+import algo.util.ArrayUtil;
 
 public class ReversePolishNotationImpl implements ReversePolishNotation{
 
 	@Override
 	public int evaluate(String[] tokens) {
-		if(GeneralUtil.isEmpty(tokens)) {
+		if(ArrayUtil.isEmpty(tokens)) {
 			return 0;
 		}
 		

@@ -8,6 +8,10 @@ public class TreeNode {
 	public TreeNode right;
 	public final int value;
 
+//	public static TreeNode fromArray(int[] values) {
+//		
+//	}
+	
 	public TreeNode(int value) {
 		this.value = value;
 	}
@@ -26,10 +30,13 @@ public class TreeNode {
 		return Objects.nonNull(right);
 	}
 
+	public static int compare(TreeNode p,TreeNode q){
+		return Integer.compare(p.value,q.value);
+	}
+
 	@Override
 	public String toString() {
 		return "TreeNode [value=" + value + "]";
 	}
-	
 	
 }

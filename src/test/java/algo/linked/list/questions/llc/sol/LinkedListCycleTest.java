@@ -8,9 +8,9 @@ import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.easy.llc.LinkedListCycle;
 import algo.linked.list.util.ListUtil;
 
-public class LinkedListCycleTest {
+public abstract class LinkedListCycleTest {
 
-	LinkedListCycle impl;
+	private LinkedListCycle impl;
 	
 	public LinkedListCycleTest(LinkedListCycle impl) {
 		this.impl = impl;

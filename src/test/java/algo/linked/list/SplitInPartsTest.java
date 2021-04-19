@@ -5,12 +5,14 @@ import static org.testng.Assert.assertTrue;
 import java.util.Arrays;
 
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import algo.linked.list.pojo.ListNode;
 import algo.linked.list.questions.medium.sip.SplitImpl;
 import algo.linked.list.util.ListUtil;
 
+@Ignore
 public class SplitInPartsTest {
 
 	SplitImpl service = new SplitImpl();

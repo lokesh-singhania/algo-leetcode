@@ -17,7 +17,7 @@ public class StackUsingQueuesTest {
 	Supplier<StackUsingQueues<Integer>> newStackSupplier;
 
 	@Factory
-	public Object[] tests() {
+	private static Object[] tests() {
 		return new Object[] {
 			new StackUsingQueuesTest(LinkedListImpl<Integer>::new),
 			new StackUsingQueuesTest(ListImpl<Integer>::new),

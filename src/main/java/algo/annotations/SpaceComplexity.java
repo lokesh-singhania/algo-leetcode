@@ -4,5 +4,5 @@ public @interface SpaceComplexity {
 
 	ComplexityValue value();
 	
-	String remark() default "";
+	String[] remark() default "";
 }

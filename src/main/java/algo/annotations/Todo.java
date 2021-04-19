@@ -10,4 +10,8 @@ import java.lang.annotation.Target;
 public @interface Todo {
 
 	String value() default ""; //comments
+
+	String comments() default "";
+
+	String date() default "";
 }

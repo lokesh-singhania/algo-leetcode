@@ -14,6 +14,7 @@ public class Visited implements LinkedListCycle {
 		ListNode node = head;
 		while(node!=null) {
 			if(visited.contains(node)) return true;
+			visited.add(node);
 			node = node.next;
 		}
 		return false;

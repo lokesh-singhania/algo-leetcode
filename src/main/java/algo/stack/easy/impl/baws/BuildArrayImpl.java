@@ -1,13 +1,13 @@
 package algo.stack.easy.impl.baws;
 
-import static algo.util.GeneralUtil.isEmpty;
+import static algo.util.ArrayUtil.isEmpty;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import algo.stack.easy.BuildArrayWithStack;
-import algo.util.GeneralUtil;
+import algo.util.ArrayUtil;
 
 public class BuildArrayImpl implements BuildArrayWithStack{
 
