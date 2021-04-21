@@ -8,10 +8,17 @@ public class TreeNode {
 	public TreeNode right;
 	public final int value;
 
-//	public static TreeNode fromArray(int[] values) {
-//		
-//	}
-	
+	public static TreeNode fromArray(Integer[] values) {
+		return createTreeNode(values,0);
+	}
+
+	private static TreeNode createTreeNode(Integer[] values, int index) {
+		if(index>=values.length || values[index]==null){
+			return null;
+		}
+		return new TreeNode(values[index],createTreeNode(values,2*index+1),createTreeNode(values,2*index+2));
+	}
+
 	public TreeNode(int value) {
 		this.value = value;
 	}
@@ -28,6 +35,10 @@ public class TreeNode {
 
 	public boolean hasRightChild() {
 		return Objects.nonNull(right);
+	}
+
+	public boolean isLeaf(){
+		return left==null && right==null;
 	}
 
 	public static int compare(TreeNode p,TreeNode q){
