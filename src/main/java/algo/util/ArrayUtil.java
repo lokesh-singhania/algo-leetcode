@@ -1,5 +1,7 @@
 package algo.util;
 
+import java.util.Collection;
+
 public final class ArrayUtil {
 
 	private ArrayUtil() {
@@ -29,6 +31,10 @@ public final class ArrayUtil {
 			}
 		}
 		return minIndex;
+	}
+
+	public static int[] toArray(Collection<Integer> coll) {
+		return coll.stream().mapToInt(Integer::intValue).toArray();
 	}
 		
 }
