@@ -1,4 +1,4 @@
-package algo.pojo;
+package models;
 
 import java.util.Objects;
 
@@ -6,7 +6,7 @@ public class TreeNode {
 
 	public TreeNode left;
 	public TreeNode right;
-	public final int value;
+	public final int val;
 
 	public static TreeNode fromArray(Integer[] values) {
 		return createTreeNode(values,0);
@@ -19,12 +19,12 @@ public class TreeNode {
 		return new TreeNode(values[index],createTreeNode(values,2*index+1),createTreeNode(values,2*index+2));
 	}
 
-	public TreeNode(int value) {
-		this.value = value;
+	public TreeNode(int val) {
+		this.val = val;
 	}
 
-	public TreeNode(int value, TreeNode left, TreeNode right) {
-		this(value);
+	public TreeNode(int val, TreeNode left, TreeNode right) {
+		this(val);
 		this.left = left;
 		this.right = right;
 	}
@@ -42,12 +42,12 @@ public class TreeNode {
 	}
 
 	public static int compare(TreeNode p,TreeNode q){
-		return Integer.compare(p.value,q.value);
+		return Integer.compare(p.val,q.val);
 	}
 
 	@Override
 	public String toString() {
-		return "TreeNode [value=" + value + "]";
+		return "TreeNode [value=" + val + "]";
 	}
 	
 }

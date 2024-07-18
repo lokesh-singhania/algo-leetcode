@@ -1,6 +1,6 @@
 package algo.tree.sum.path;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.SumRootToLeaf;
 
 public class Recursive implements SumRootToLeaf {
@@ -14,7 +14,7 @@ public class Recursive implements SumRootToLeaf {
 		if (node == null) {
 			return 0;
 		}
-		num = num << 1 + node.value;
+		num = num << 1 + node.val;
 		if (node.isLeaf()) {
 			return num;
 		}

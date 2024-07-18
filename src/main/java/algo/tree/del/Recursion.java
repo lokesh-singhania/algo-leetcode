@@ -1,6 +1,6 @@
 package algo.tree.del;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.DeleteNodes;
 
 import java.util.ArrayList;
@@ -34,7 +34,7 @@ public class Recursion implements DeleteNodes {
         private TreeNode delete(TreeNode node, boolean isRoot) {
             if (node == null) return node;
 
-            var deleted = deletes.contains(node.value);
+            var deleted = deletes.contains(node.val);
             if (isRoot && !deleted) {
                 roots.add(node);
             }

@@ -1,6 +1,6 @@
 package algo.tree.node.directions;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 public class SeparatePaths22 implements NodeDirections{
     public String getDirections(TreeNode root, int startValue, int destValue) {
@@ -25,7 +25,7 @@ public class SeparatePaths22 implements NodeDirections{
         if (node == null) {
             return null;
         }
-        if (node.value == value) {
+        if (node.val == value) {
             return path.toString();
         }
         path.append('L');

@@ -1,6 +1,6 @@
 package algo.tree;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 import java.util.List;
 

@@ -1,11 +1,10 @@
 package algo.april.impl.btp;
 
-import algo.annotations.ComplexityValue;
 import algo.annotations.Date;
 import algo.annotations.SpaceComplexity;
 import algo.annotations.TimeComplexity;
 import algo.april.BinaryTreePaths;
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.util.Factory;
 
 import java.util.*;
@@ -53,6 +52,6 @@ public class Iterative implements BinaryTreePaths {
     }
 
     private String path(String prevPath, TreeNode node) {
-        return prevPath.isEmpty() ? String.valueOf(node.value) : prevPath + Factory.ARROW + node.value;
+        return prevPath.isEmpty() ? String.valueOf(node.val) : prevPath + Factory.ARROW + node.val;
     }
 }

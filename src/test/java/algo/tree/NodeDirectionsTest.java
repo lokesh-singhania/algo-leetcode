@@ -1,6 +1,6 @@
 package algo.tree;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.node.directions.LCA;
 import algo.tree.node.directions.NodeDirections;
 import org.testng.Assert;

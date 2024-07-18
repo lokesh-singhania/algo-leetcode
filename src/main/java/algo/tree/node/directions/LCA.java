@@ -1,6 +1,6 @@
 package algo.tree.node.directions;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 import java.util.Optional;
 
@@ -39,14 +39,14 @@ public class LCA implements NodeDirections {
     }
 
     boolean matches(TreeNode node,int val){
-        return node!=null && node.value == val;
+        return node!=null && node.val == val;
     }
 
     TreeNode search(TreeNode node,int v1,int v2,StringBuilder path){
         if(node==null){
             return null;
         }
-        if(node.value == v1 || node.value==v2){
+        if(node.val == v1 || node.val ==v2){
             return node;
         }
         path.append('L');
@@ -68,7 +68,7 @@ public class LCA implements NodeDirections {
         if(node==null){
             return null;
         }
-        if(node.value==v1 || node.value==v2){
+        if(node.val ==v1 || node.val ==v2){
             return node;
         }
         var left = lca(node.left,v1,v2);

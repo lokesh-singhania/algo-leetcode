@@ -1,6 +1,6 @@
 package algo.tree.lca;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.LowestCommonAncestor;
 
 public class LcaByCount implements LowestCommonAncestor {

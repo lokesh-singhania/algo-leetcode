@@ -1,4 +1,4 @@
-package algo.pojo;
+package models;
 
 import static org.testng.Assert.assertEquals;
 

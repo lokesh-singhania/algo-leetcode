@@ -2,7 +2,7 @@ package algo.april;
 
 import algo.april.impl.btp.Iterative;
 import algo.april.impl.btp.Recursive;
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
@@ -10,8 +10,6 @@ import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
-
-import static org.testng.Assert.*;
 
 public class BinaryTreePathsTest {
 

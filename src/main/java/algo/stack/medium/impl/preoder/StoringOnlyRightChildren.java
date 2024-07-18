@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import algo.annotations.Todo;
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.stack.medium.BinaryTreePreorderTraversal;
 
 @Todo

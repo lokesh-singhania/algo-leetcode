@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.stack.medium.BinaryTreePreorderTraversal;
 
 public class Iterative implements BinaryTreePreorderTraversal{
@@ -17,7 +17,7 @@ public class Iterative implements BinaryTreePreorderTraversal{
 		List<Integer> values = new ArrayList<>();
 		while(!deque.isEmpty()) {
 			TreeNode node = deque.pop();
-			values.add(node.value);
+			values.add(node.val);
 			if(node.hasRightChild()) deque.push(node.right);
 			if(node.hasLeftChild()) deque.push(node.left);
 		}

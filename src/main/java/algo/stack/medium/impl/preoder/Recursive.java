@@ -3,7 +3,7 @@ package algo.stack.medium.impl.preoder;
 import java.util.ArrayList;
 import java.util.List;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.stack.medium.BinaryTreePreorderTraversal;
 
 public class Recursive implements BinaryTreePreorderTraversal{
@@ -16,7 +16,7 @@ public class Recursive implements BinaryTreePreorderTraversal{
 	}
 
 	private void preOrder(List<Integer> values, TreeNode node) {
-		values.add(node.value);
+		values.add(node.val);
 		if(node.hasLeftChild()) {
 			traverse(node.left);
 		}

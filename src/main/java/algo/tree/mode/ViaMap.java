@@ -7,7 +7,7 @@ import java.util.Map;
 
 import algo.annotations.Complexity;
 import algo.annotations.ComplexityValue;
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.Mode;
 import algo.util.ArrayUtil;
 
@@ -46,7 +46,7 @@ public class ViaMap implements Mode {
 
 	private void populateFrequencies(TreeNode node, Map<Integer, Integer> freq) {
 		if (node != null) {
-			freq.merge(node.value, 1, (old, one) -> old + one);
+			freq.merge(node.val, 1, (old, one) -> old + one);
 			populateFrequencies(node.left, freq);
 			populateFrequencies(node.right, freq);
 		}

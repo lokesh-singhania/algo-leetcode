@@ -1,6 +1,6 @@
 package algo.tree.node.directions;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 public interface NodeDirections {
 

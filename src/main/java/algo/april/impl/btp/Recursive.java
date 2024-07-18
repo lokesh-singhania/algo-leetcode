@@ -1,11 +1,10 @@
 package algo.april.impl.btp;
 
-import algo.annotations.ComplexityValue;
 import algo.annotations.Remarks;
 import algo.annotations.SpaceComplexity;
 import algo.annotations.TimeComplexity;
 import algo.april.BinaryTreePaths;
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -47,6 +46,6 @@ public class Recursive implements BinaryTreePaths {
         if (path.length() != 0) {
             path.append("->");
         }
-        path.append(node.value);
+        path.append(node.val);
     }
 }

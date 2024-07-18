@@ -3,7 +3,7 @@ package algo.tree.cousins;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.Cousins;
 
 public class CousinsImpl implements Cousins {
@@ -54,7 +54,7 @@ public class CousinsImpl implements Cousins {
 				return 0;
 
 			nodes.add(node);
-			int val = node.value;
+			int val = node.val;
 			if (val == x || val == y) {
 				return 1;
 			}

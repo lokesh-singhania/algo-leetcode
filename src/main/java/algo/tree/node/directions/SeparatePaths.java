@@ -1,7 +1,7 @@
 package algo.tree.node.directions;
 
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 public class SeparatePaths implements NodeDirections {
     @Override
@@ -29,7 +29,7 @@ public class SeparatePaths implements NodeDirections {
         if(node==null){
             return false;
         }
-        if(node.value==val){
+        if(node.val ==val){
             return true;
         }
         sb.append('L');

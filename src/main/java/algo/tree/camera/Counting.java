@@ -1,6 +1,6 @@
 package algo.tree.camera;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.Camera;
 
 public class Counting implements Camera {

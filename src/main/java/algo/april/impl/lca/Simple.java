@@ -1,10 +1,9 @@
 package algo.april.impl.lca;
 
-import algo.annotations.Date;
 import algo.april.LowestCommonAncestor;
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
-import static algo.pojo.TreeNode.compare;
+import static models.TreeNode.compare;
 
 
 public class Simple implements LowestCommonAncestor {

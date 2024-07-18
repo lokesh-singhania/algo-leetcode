@@ -1,13 +1,5 @@
 package algo.random.mcs;
 
-import java.util.Map;
-import java.util.PriorityQueue;
-
-import org.checkerframework.checker.units.qual.min;
-
-import algo.pojo.Tuple;
-import algo.random.MostCompetitiveSubsequence;
-
 //public class Better implements MostCompetitiveSubsequence{
 
 //	@Override

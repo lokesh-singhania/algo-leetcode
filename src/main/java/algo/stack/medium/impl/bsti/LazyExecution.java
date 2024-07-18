@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.stack.medium.BinarySearchTreeIterator;
 
 public class LazyExecution implements BinarySearchTreeIterator{
@@ -36,7 +36,7 @@ public class LazyExecution implements BinarySearchTreeIterator{
 		if(popped.hasRightChild()) {
 			stack.push(popped.right);
 		}
-		return popped.value;
+		return popped.val;
 	}
 
 }

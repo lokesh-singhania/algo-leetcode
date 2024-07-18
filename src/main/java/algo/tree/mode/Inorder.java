@@ -4,11 +4,9 @@ import static algo.util.ArrayUtil.toArray;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.Mode;
-import algo.util.ArrayUtil;
 
 public class Inorder implements Mode {
 
@@ -53,7 +51,7 @@ public class Inorder implements Mode {
 
 		inorder(node.left);
 
-		check(node.value);
+		check(node.val);
 
 		inorder(node.right);
 

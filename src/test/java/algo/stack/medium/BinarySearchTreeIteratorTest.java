@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.stack.medium.impl.bsti.ControlledRecursion;
 import algo.stack.medium.impl.bsti.StoringTraversal;
 import algo.stack.medium.impl.bsti.LazyExecution;

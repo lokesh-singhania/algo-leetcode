@@ -1,7 +1,6 @@
 package algo.tree;
 
-import algo.pojo.TreeNode;
-import algo.tree.cousins.CousinsImpl;
+import models.TreeNode;
 
 public interface Cousins {
 

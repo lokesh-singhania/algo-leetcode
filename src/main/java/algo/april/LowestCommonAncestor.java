@@ -1,8 +1,7 @@
 package algo.april;
 
 import algo.annotations.Date;
-import algo.pojo.TreeNode;
-import com.sun.source.tree.Tree;
+import models.TreeNode;
 
 @Date("April 19 2021")
 public interface LowestCommonAncestor {

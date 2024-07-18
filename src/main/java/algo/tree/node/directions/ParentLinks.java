@@ -1,13 +1,13 @@
 package algo.tree.node.directions;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 import java.util.*;
 
 public class ParentLinks implements NodeDirections{
     public String getDirections(TreeNode root, int startValue, int destValue) {
         List<TreeNode> parents = new ArrayList<>();
-        add(parents,root.value,null);
+        add(parents,root.val,null);
         dfs(root,parents);
 
         TreeNode startNode = getNode(startValue,parents,root);
@@ -19,7 +19,7 @@ public class ParentLinks implements NodeDirections{
         add(path,startValue,null);
         while(!q.isEmpty()){
             TreeNode node = q.remove();
-            if(node.value==destValue){
+            if(node.val ==destValue){
                 System.out.println("Got it");
                 break;
             }
@@ -33,7 +33,7 @@ public class ParentLinks implements NodeDirections{
         for(int val=destValue;val!=startValue;){
             char step = path.get(val);
             sb.append(step);
-            val = pathNodes.get(val).value;
+            val = pathNodes.get(val).val;
         }
         return sb.reverse().toString();
     }
@@ -42,34 +42,34 @@ public class ParentLinks implements NodeDirections{
         if(node==null){
             return null;
         }
-        return parents.get(node.value);
+        return parents.get(node.val);
     }
 
     void addNeighbor(Queue<TreeNode> q,List<Character> path,List<TreeNode> pathNodes,TreeNode node,char label,TreeNode original){
-        if(node!=null && (path.size() <= node.value || path.get(node.value)==null)){
+        if(node!=null && (path.size() <= node.val || path.get(node.val)==null)){
             q.add(node);
-            add(path,node.value,label);
-            add(pathNodes,node.value,original);
+            add(path,node.val,label);
+            add(pathNodes,node.val,original);
         }
     }
 
     TreeNode getNode(int v,List<TreeNode> parents,TreeNode root){
         var parent = parents.get(v);
-        if(parent==null && root.value == v){
+        if(parent==null && root.val == v){
             return root;
         }
         return Optional.ofNullable(parent.left)
-                .filter(t->t.value==v)
+                .filter(t->t.val ==v)
                 .orElse(parent.right);
     }
 
     void dfs(TreeNode node,List<TreeNode> parents){
         if(node.left!=null){
-            add(parents,node.left.value,node);
+            add(parents,node.left.val,node);
             dfs(node.left,parents);
         }
         if(node.right!=null){
-            add(parents,node.right.value,node);
+            add(parents,node.right.val,node);
             dfs(node.right,parents);
         }
     }

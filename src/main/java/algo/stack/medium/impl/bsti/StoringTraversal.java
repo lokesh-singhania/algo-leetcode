@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.stack.medium.BinarySearchTreeIterator;
 
 public class StoringTraversal implements BinarySearchTreeIterator{
@@ -27,7 +27,7 @@ public class StoringTraversal implements BinarySearchTreeIterator{
 		if(node.hasLeftChild()) {
 			inorder(node.left);
 		}
-		values.add(node.value);
+		values.add(node.val);
 		if(node.hasRightChild()) {
 			inorder(node.right);
 		}

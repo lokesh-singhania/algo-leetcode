@@ -1,6 +1,6 @@
 package algo.tree.lib;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 public class TreeFunctions {
 

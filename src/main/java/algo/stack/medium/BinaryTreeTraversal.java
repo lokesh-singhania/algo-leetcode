@@ -2,7 +2,7 @@ package algo.stack.medium;
 
 import java.util.List;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 
 public interface BinaryTreeTraversal {
 

@@ -3,7 +3,7 @@ package algo.stack.medium.impl.bsti;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.stack.medium.BinarySearchTreeIterator;
 
 public class ControlledRecursion implements BinarySearchTreeIterator {
@@ -31,7 +31,7 @@ public class ControlledRecursion implements BinarySearchTreeIterator {
 	public int next() {
 		TreeNode node = stack.pop();
 		leftMostNode(node.right);
-		return node.value;
+		return node.val;
 	}
 
 }

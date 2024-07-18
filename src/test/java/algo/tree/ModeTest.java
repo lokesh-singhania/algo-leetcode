@@ -6,11 +6,8 @@ import static org.testng.Assert.assertEqualsNoOrder;
 
 import org.testng.annotations.Test;
 
-import algo.pojo.TreeNode;
+import models.TreeNode;
 import algo.tree.mode.Inorder;
-import algo.tree.mode.ViaMap;
-import algo.util.MyAsserts;
-import junit.framework.Assert;
 
 public class ModeTest {
 
