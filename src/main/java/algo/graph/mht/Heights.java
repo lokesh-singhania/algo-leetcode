@@ -63,5 +63,6 @@ public class Heights {
 		updateFromDepths(0);
 
 		// find min height
+		return null;
 	}
 }
