@@ -1,4 +1,4 @@
-package algo.gen;
+package algo.bits;
 
 public interface Complement {
 

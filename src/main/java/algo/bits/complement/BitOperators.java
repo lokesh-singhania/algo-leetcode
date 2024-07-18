@@ -1,4 +1,6 @@
-package algo.gen;
+package algo.bits.complement;
+
+import algo.bits.Complement;
 
 public class BitOperators implements Complement {
 
