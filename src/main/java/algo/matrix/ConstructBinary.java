@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ContructBinary {
+public class ConstructBinary {
     public List<List<Integer>> reconstructMatrix(int u, int l, int[] cs) {
         boolean[][] res = new boolean[2][cs.length];
         for (int i = 0; i < cs.length; ++i) {
