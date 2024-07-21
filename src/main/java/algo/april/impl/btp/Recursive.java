@@ -43,7 +43,7 @@ public class Recursive implements BinaryTreePaths {
     }
 
     private void add(TreeNode node, StringBuilder path) {
-        if (path.length() != 0) {
+        if (!path.isEmpty()) {
             path.append("->");
         }
         path.append(node.val);

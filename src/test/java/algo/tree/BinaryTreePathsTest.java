@@ -1,5 +1,6 @@
-package algo.april;
+package algo.tree;
 
+import algo.april.BinaryTreePaths;
 import algo.april.impl.btp.Iterative;
 import algo.april.impl.btp.Recursive;
 import models.TreeNode;
