@@ -44,29 +44,5 @@ public abstract class TopologicalSort implements Conditions {
         int r, c;
     }
 
-    class Node {
-        List<Integer> adj;
-        int in;
-
-        Node() {
-            adj = new ArrayList<>();
-        }
-
-        void add(int to) {
-            adj.add(to);
-        }
-
-        void in() {
-            in++;
-        }
-
-        void reduceIn() {
-            in--;
-        }
-
-        boolean free() {
-            return in == 0;
-        }
-    }
 
 }
