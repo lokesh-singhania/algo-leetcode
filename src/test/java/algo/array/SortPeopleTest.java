@@ -1,13 +1,13 @@
 package algo.array;
 
-import algo.array.sort.people.BottomUpMergeSort;
+import algo.array.sort.people.TopDownMergeSort;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class SortPeopleTest {
 
-    private SortPeople service = new BottomUpMergeSort();
+    private SortPeople service = new TopDownMergeSort();
 
     @DataProvider(name = "sortPeopleData")
     public Object[][] createSortPeopleData() {
