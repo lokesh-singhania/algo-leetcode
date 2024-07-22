@@ -1,6 +1,6 @@
 package algo.matrix.paint.black;
 
-import algo.annotations.TLE;
+import algo.annotations.undesired.TLE;
 import algo.matrix.PaintBlack;
 
 @TLE

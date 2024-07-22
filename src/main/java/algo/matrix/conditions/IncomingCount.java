@@ -40,4 +40,29 @@ public class IncomingCount extends TopologicalSort{
         return (ordered.size()<n) ? Collections.emptyList() : ordered;
     }
 
+    class Node {
+        List<Integer> adj;
+        int in;
+
+        Node() {
+            adj = new ArrayList<>();
+        }
+
+        void add(int to) {
+            adj.add(to);
+        }
+
+        void in() {
+            in++;
+        }
+
+        void reduceIn() {
+            in--;
+        }
+
+        boolean free() {
+            return in == 0;
+        }
+    }
+
 }
